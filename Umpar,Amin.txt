@@ -1,0 +1,126 @@
+intro sequence
+--------------
+--------------
+#level 1
+--------
+$ git commit
+
+#level 2
+--------
+$ git checkout bugFix
+
+#level 3
+--------
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+
+#level 4
+-------
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+
+rumping up
+----------
+----------
+#level 1
+-------
+$ git checkout C4
+
+#level 2
+-------
+$ git checkout C3
+
+#level 3
+--------
+$ git checkout master
+$ git branch -f master HEAD~2
+$ git merge bugFix
+$ git merge C6
+$ git branch -f bugFix HEAD~4
+$ git checkout C1
+
+reversing changes ing Git
+-------------------------
+-------------------------
+git reset HEAD~1
+git checkout pushed
+git revert pushed
+
+master revert luke
+------------------
+------------------
+$ git checkout bugFix
+$ git rebase master
+$ git checkout C4
+$ git rebase bugFix
+$ git checkout C5
+$ git rebase C4'
+$ git checkout C6
+$ git rebase C5'
+$ git checkout side
+$ git rebase C5'
+$ git checkout another
+$ git rebase C6'
+$ git checkout master
+$ git merge another
+
+Mixed bag
+--------
+--------
+#level 1
+$ git checkout master
+$ git cherry-pick C4
+
+#level 2
+--------
+$ git rebase -i HEAD~2
+$ git commit --amend
+$ git rebase -i HEAD~2
+$ git checkout master
+$ git merge caption
+
+#level 3
+--------
+$ git checkout master
+$ git cherry-pick C2
+$ git branch -f master HEAD~1
+$ git cherry-pick C2'
+$ git cherry-pick C3
+
+
+Advanced Topics
+--------------
+--------------
+#level 1
+--------
+$ git branch bugWork
+$ git checkout bugWork
+$ git branch -f bugWork HEAD~1
+$ git branch -f bugWork HEAD^2
+$ git branch -f bugWork HEAD^1
+$ git checkout master
+
+#level 2
+--------
+$ git branch -f three HEAD~3
+$ git checkout one
+$ git cherry-pick C4
+$ git checkout two
+$ git cherry-pick C5
+$ git checkout one
+$ git cherry-pick C3
+$ git cherry-pick C2
+$ git checkout two
+$ git cherry-pick C4'
+$ git cherry-pick C3'
+$ git cherry-pick C2'
+
