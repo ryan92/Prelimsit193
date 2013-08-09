@@ -1,0 +1,103 @@
+lesson1 intro_1
+git commit
+git commit
+
+lesson2 intro 2
+
+git branch bugFix
+git checkout bugFix
+
+lesson3 intro3
+
+git branch bugFix
+git checkout bugFix
+git commit
+git checkout master
+git commit
+git merge bugFix
+
+
+lesson4 intro4
+
+git branch bugFix
+git checkout bugFix
+git commit
+git checkout master
+git commit
+git checkout bugFix
+git rebase master
+
+lesson5 Ramping_up_1
+
+git checkout C4
+
+
+lesson6 Ramping_Up_2
+
+git checkout bugFix^
+
+lesson7 Ramping_up_3
+
+git branch -f master C6
+git branch -f bugFix C0
+git checkout C1
+
+
+lesson8 ramping_up_4
+
+git reset HEAD~1
+git checkout pushed
+git revert HEAD
+
+lesson9 master_the_rebase
+
+git checkout bugFix
+git rebase master
+git checkout C4
+git rebase bugFix
+git checkout C5
+git rebase C4'
+git checkout side
+git rebase C5'
+git checkout another
+git rebase side
+git branch -f master another
+
+
+lesson10 mixed_bag_1
+
+git checkout C1
+git cherry-pick C4
+git branch -f master C4'
+
+lesson11 Mixed_bag_2
+
+git rebase -i HEAD~2 (select C3)
+git commit --amend
+git commit --amend
+git checkout C3
+git commit --amend
+git rebase C2'''
+git branch -f master C3''
+
+
+lesson12 mixed_bag_3
+
+git rebase -i HEAD~2
+git commit --amend
+git cherry-pick C3
+git branch -f master C3'
+
+lesson13 advance_1
+
+git branch bugWork Head~^2~
+
+lesson14 advance_2
+
+git rebase -i HEAD~4 (order it and select C5)
+git branch -f one C2'
+git branch -f master C5
+git rebase -i HEAD~4 (order)
+git branch -f master C5
+git branch -f three C2
+git branch -f two C2''x
