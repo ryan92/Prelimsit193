@@ -1,0 +1,79 @@
+level intro 1
+git commit
+git commit
+
+level intro 2
+git branch bugFix    
+git checkout bugFix
+
+level intro 3
+git checkout -b bugFix   
+git commit    
+git checkout master    
+git commit    
+git merge bugFix
+
+level intro 4
+git checkout -b bugFix    
+git commit    
+git checkout master    
+git commit    
+git checkout bugFix    
+git rebase C3
+
+level ramup1
+git checkout C4
+
+level rampup2
+git checkout C3
+
+level rampup3
+git checkout C1    
+git branch -f master C6    
+git branch -f bugFix C0
+
+level rampup4
+git reset C1    
+git checkout pushed    
+git revert C2
+
+level rebase1
+
+git checkout bugFix    
+git rebase C2    
+git branch -f master C4    
+git checkout master    
+git rebase C3'    
+git checkout side    
+git rebase C4'
+git checkout another
+git rebase C6'
+git branch -f master C7'
+
+level mixed1
+git checkout master 
+git cherry-pick C4
+
+level mixed2
+git rebase -i C1    
+$ git commit --amend    
+$ git rebase -i C1    
+$ git branch -f master C3''
+
+level mixed3
+git checkout master    
+git cherry-pick C2    
+git commit --amend    
+git cherry-pick C3
+
+level advanced1
+git branch bugWork C2
+
+level advanced2
+git checkout one    
+git cherry-pick C4 C3 C2    
+git checkout two    
+git cherry-pick C5 C4 C3 C2    
+git branch -f three C2
+
+
