@@ -1,0 +1,34 @@
+Stage 1
+-----------------------
+Level1
+-------
+$git commit
+$git commit
+
+Level2
+-------
+$git branch bugFix
+$git checkout bugFix
+
+Level3
+-------
+$ git checkout -b bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix
+
+Level4
+-------
+$ git checkout -b bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+
+
+Stage 2
+-----------------------
+Level 1
+-------
