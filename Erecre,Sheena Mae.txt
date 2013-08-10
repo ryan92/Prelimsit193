@@ -1,0 +1,81 @@
+Level 1: INTRO1 *2
+git commit 
+git commit
+
+Level 2: INTRO2 *2
+git branch bugFix
+git checkout bugFix
+
+Level 3:
+git branch bugFix
+git checkout bugFix
+git commit
+git checkout master
+git commit
+git merge bugFix
+
+Level 4:
+git branch bugFix    
+$ git commit   
+$ git checkout bugFix  
+$ git checkout master  
+$ git commit    
+$ git checkout bugFix    
+$ git rebase master
+
+Level 5: RUMPUP1 *1
+ 
+$ git checkout C4
+
+Level 6: RUMPUP2 *1 
+$ git checkout C3
+
+Level 7: RUMPUP3 *3
+$ git checkout C1    
+$ git branch -f master C6    
+$ git branch -f bugFix C0
+
+Level 8: RUMPUP *3
+
+$ git reset HEAD~1    
+$ git checkout pushed
+$ git revert HEAD
+
+Level 9: REBASE1 *7
+
+$ git rebase master bugFix  
+$ git rebase bugFix another  
+$ git rebase side another    
+$ git branch -f master another
+
+Level 10: MIXED1 *2
+
+$ git checkout master
+$ git cherry-pick bugFix
+
+Level 11: MIXED2 *4
+
+$ git rebase -i master   
+$ git commit --amend    
+$ git rebase -i master    
+$ git branch -f master
+
+Level 12: MIXED3 *4
+
+$ git rebase newImage master  
+$ git commit --amend    
+$ git commit --amend    
+$ git cherry-pick C3
+
+Level 13: ADVANCED1 *1
+
+$ git branch bugWork master~^2~1
+
+Level 14: ADVANCED2 *5
+
+$ git branch -f three C2
+$ git checkout one    
+$ git cherry-pick C4 C3 C2    
+$ git checkout two    
+$ git cherry-pick C5 C4 C3 C2    
+
