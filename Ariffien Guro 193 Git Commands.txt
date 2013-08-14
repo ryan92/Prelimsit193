@@ -1,0 +1,135 @@
+	Introduction Sequence
+intro1
+
+$ git commit
+$ git commit
+
+
+intro2
+$ git branch bugFix
+$ git checkout bugFix
+
+
+intro3
+$ git commit bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git merge bugFix                                   
+                                                         
+
+intro4
+$ git branch bugFix
+$ git checkout bugFix
+$ git commit
+$ git checkout master
+$ git commit
+$ git checkout bugFix
+$ git rebase master
+________________________________
+	RAMPING UP
+rampup1
+$ git checkout bugFix;git checkout C4
+
+
+rampup2
+$ git checkout bugFix^
+
+rampup3
+$ git checkout master                           
+$ git branch -f master HEAD~2							
+$ git merge bugFix
+$ git merge C6							
+$ git branch -f bugFix HEAD~4
+$ git checkout C1
+
+rampup4
+$ git reset HEAD~1
+$ git checkout pushed
+$ git revert pushed
+
+
+________________________
+	Master the Rebase Luke! 
+
+$ git checkout bugFix
+$ git rebase master
+$ git checkout C4
+$ git rebase bugFix
+$ git checkout C5
+$ git rebase C4'
+$ git checkout side
+$ git rebase C5'
+$ git checkout another
+$ git rebase side
+$ git checkout master
+$ git merge another
+
+
+							
+______________________________________________
+
+	A Mixed Bag
+
+mixed 1
+
+$ git checkout master
+$ git cherry-pick C4
+
+
+mixed 2
+
+
+$ git rebase -i HEAD~2
+
+$ git commit --amend
+
+$ git rebase -i HEAD~2
+
+$ git checkout master
+
+$ git merge caption
+
+
+mixed 3
+
+
+$ git checkout master
+
+$ git merge newImage
+
+$ git rebase -i HEAD~1
+
+$ git rebase -i HEAD~1
+
+$ git cherry-pick C3
+
+___________________________
+      Advanced Topics
+
+
+advanced 1
+
+
+$ git branch bugWork master^^2^ 
+
+
+
+advanced 2
+
+
+
+
+$ git checkout one
+
+$ git cherry-pick C4 C3 C2
+
+$ git checkout two
+
+$ git cherry-pick C5 C4 C3 C2
+
+$ git branch -f three C2
+
+
+____________________________
